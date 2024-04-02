@@ -61,15 +61,3 @@ for m in range(1,node_num-1):
             print(f'case 5 {T[m-1,n]}')#print(f'case 5 {T[m,n]}')
         
         
-#Example
-# num_iterations = 2000
-# for iteration in range(num_iterations):
-#     for i in range(1, Ny - 1):
-#         for j in range(1, Nx - 1):
-#             T[i, j] = 0.25 * (T[i+1, j] + T[i-1, j] + T[i, j+1] + T[i, j-1])
-#     if iteration % 100 == 0:
-#         #time.sleep(1)
-#         X, Y = np.meshgrid(np.linspace(0, Lx, Nx), np.linspace(0, Ly, Ny))
-#         fig = px.imshow(T, x=X[0], y=Y[:, 0], color_continuous_scale='viridis')  # Use 'viridis' colorscale
-#         fig.update_layout(title='Temperature Distribution', xaxis_title='X', yaxis_title='Y')
-#         st_plot.plotly_chart(fig)
